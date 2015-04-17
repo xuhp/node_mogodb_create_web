@@ -5,7 +5,7 @@ var app = express();
 
 app.set('views', './views/pages'); //设置视图根目录
 app.set('view engine', 'jade'); //设置默认的模板引擎
-app.use(express.static(path.join(__dirname, 'bower_components'))) // __dirname 为当前目录
+app.use(express.static(path.join(__dirname, 'bower_components'))) //__dirname 为当前目录
 app.listen(port); //监听端口
 
 console.log('imooc started on port '+port);
